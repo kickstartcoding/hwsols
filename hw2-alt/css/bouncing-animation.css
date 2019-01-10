@@ -1,0 +1,27 @@
+.Piece {
+  width: 100px;
+  height: 100px;
+
+  animation: Bounce 0.3s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
+}
+
+@keyframes Bounce {
+  from { transform: translate3d(0, 0, 0);    }
+  to   { transform: translate3d(0, 50px, 0); }
+}
+
+
+.VictoryPiece {
+  position: absolute;
+  animation: moveX 3.05s linear 0s infinite alternate, moveY 3.4s linear 0s infinite alternate;
+}
+
+@keyframes moveX {
+  from { left: 0; } to { left: 90vw; }
+}
+@keyframes moveY {
+  from { top: 0; } to { top: 90vh; }
+}
