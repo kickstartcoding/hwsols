@@ -9,7 +9,7 @@
 
 #### After click
 
-After clicking on a URL, an `alert` appears with further information
+After clicking on a bar, an `alert` appears with further information
 
 ![Homework 1 Solution B](./img/hw1_b.png)
 
