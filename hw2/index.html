@@ -11,21 +11,40 @@
             <h1>Currency</h1>
 
             <div class="CurrencyChooser">
-                <label>Base currency:
-                    <select class="CurrencyChooser-select">
+                <label>
+                    <input type="radio" name="precision" value="year" checked="checked">
+                    Years
+                </label>
+                <label>
+                    <input type="radio" name="precision" value="quarter">
+                    Quarters
+                </label>
+                <label>
+                    <input type="radio" name="precision" value="month">
+                    Months
+                </label>
+
+                <label>
+                    <select class="CurrencyChooser-select" id="currency_select">
                     </select>
                 </label>
+
+                <label>
+                    <select class="CurrencyChooser-select" id="start_date">
+                    </select>
+                </label>
+
+                <!--
+                <label>
+                    <input type="range" id="month_range" min="0" max="11" />
+                </label>
+                -->
+
             </div>
+
         </section>
         <section class="MainContainer">
-            <div class="CurrencyCheckboxList">
-            </div>
             <div class="BarChart">
-                <div class="BarChart-bar" style="height: 88.5%">EUR €</div>
-                <div class="BarChart-bar" style="height: 75.5%">USD $</div>
-                <div class="BarChart-bar" style="height: 55.9%">AUD $</div>
-                <div class="BarChart-bar" style="height: 99.8%">GBP £</div>
-                <div class="BarChart-bar" style="height: 19.4%">BRL R$</div>
             </div>
         </section>
 
